@@ -1,0 +1,80 @@
+.objek-wrapper,.objek-content, .objek-sidebar {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.objek-wrapper:before, .objek-wrapper:after {
+    content: " ";
+    display: table;
+}
+.objek-wrapper:after {
+    clear: both;
+}
+.objek-wrapper {
+    margin: 0 0 5px 0;
+    >div>h2, >div>div>h2{
+      color: #4BB8CB;
+      padding: 5px;
+      border-bottom: 5px solid #4BB8CB;
+      margin-bottom: 20px
+    }
+}
+.objek-content {
+    float: left;
+    padding: 25px;
+    width: 70%;
+    min-height: 1px;
+    // background: blue;
+    text-align: justify;
+    /*border: 1px solid black;*/
+
+    >img{
+      // margin: 0 auto;
+      width: 50%;
+    }
+}
+.objek-sidebar {
+    float: left;
+    padding: 25px 30px;
+    width: 30%;
+    min-height: 1px;
+    // background: red;
+    text-align: justify;
+    /*border: 1px solid black;*/
+    .addtocart{
+      text-align: left;
+    }
+}
+.objek-todo {
+    float: left;
+    /*padding: 25px;*/
+    margin-top: 50px;
+    width: 100%;
+    min-height: 1px;
+    // background: blue;
+}
+.objek-todo h2 {
+    text-align: center;
+}
+
+.addcartbutton{
+  background-color: #DA4F59;
+  border: none;
+  padding: 10px;
+  color: white;
+  transition: all .5s ease 0s;
+  box-shadow : 2px 2px 3px #888888;
+  
+  &:hover{
+    background-color : #A5363E;
+    
+  box-shadow : 4px 4px 3px #888888;
+  }
+  &:active{
+    background-color : #E47D85;
+    
+  box-shadow : 1px 1px 3px #888888;
+  }
+}

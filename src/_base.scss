@@ -1,0 +1,266 @@
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: #333;
+    font-family: "Ubuntu", Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    min-width: pem(320);
+}
+p{
+   font-family: Arial, sans-serif; 
+}
+
+.text {
+    ul, ol {
+        list-style: outside disc;
+        font-size: pem(16);
+        line-height: pem(24);
+        margin-bottom: pem(24);
+    }
+
+    p {
+        font-size: pem(16);
+        line-height: pem(24);
+        margin-bottom: pem(24);
+
+        &.small {
+            color: #666;
+            font-size: pem(13);
+            line-height: pem(24, 13);
+            margin-bottom: pem(24, 13);
+        }
+
+        &.medium {
+            color: #666;
+            font-size: pem(14);
+            line-height: pem(24, 14);
+            margin-bottom: pem(24, 14);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h1 {
+        font-size: pem(30);
+        line-height: pem(36, 30);
+        margin-bottom: pem(12, 30);
+    }
+
+    h2 {
+        font-size: pem(24);
+        line-height: pem(30, 24);
+        margin-bottom: pem(12, 24);
+    }
+
+    a {
+        color: #6d7173;
+        border-bottom: 1px solid #a1cfe5;
+        text-decoration: none;
+        outline: none;
+
+        &:focus,
+        &:hover {
+            color: #4ab336;
+            border-bottom-color: #77b36b;
+        }
+    }
+}
+
+.block {
+    position: relative;
+    margin: 0 auto;
+    padding: pem(24) pem(20);
+    max-width: pem(960);
+}
+
+#outer-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#inner-wrap {
+    position: relative;
+    width: 100%;
+}
+
+
+
+footer[role="contentinfo"] {
+    background: #ddd;
+}
+
+.section{
+	width:100%;
+	@include clearfix;
+}
+
+.section-img{
+	width:100%;
+	@include clearfix;
+}
+
+#totop{
+    position:absolute;
+    top: 10px;
+    right: 0px;
+    width: 64px;
+    height: 64px;
+    background:url("../img/up-arrow.png") no-repeat scroll center center #999797;
+    background-size: 50% 50%;
+    border-radius: 15px;
+    transition: all 1s ease 0s;
+}
+
+#totop:hover{
+    background-color: #868686;   
+}
+
+/* Link Effect 1: Brackets */
+
+.link-effect{
+&::before,
+&::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+&::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+&::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+&:hover::before,
+&:hover::after,
+&:focus::before,
+&:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+    
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    background: rgba(34, 80, 105, 0.85);
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    h1 {
+        margin-left: 145px;
+    }
+    .breadcrumb { 
+        list-style: none; 
+        overflow: hidden; 
+        font: 12px "Ubuntu", Arial, Sans-Serif;
+        margin: 12px 0 0 145px;
+        li { 
+            float: left; 
+            color: #cacaca;
+            text-decoration: none; 
+            padding: 5px 0px 5px 45px;
+            background-color: #1F414E;                   /* fallback color */ 
+            position: relative; 
+            display: block;
+            a {
+                float: left;
+                color: #fff;
+                text-decoration: none;
+                &:after {
+                    content: " "; 
+                    display: block; 
+                    width: 0; 
+                    height: 0;
+                    float: left;
+                    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid #1F414E;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -50px; 
+                    left: 100%;
+                    z-index: 2;
+                }
+                &:before {
+                    content: " "; 
+                    display: block; 
+                    width: 0; 
+                    height: 0;
+                    float: left;
+                    border-top: 50px solid transparent;       
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid white;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -50px; 
+                    margin-left: 1px;
+                    left: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+/* Konten 2 */
+.section-zigzag-top::before,
+.section-zigzag-bot::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 90px;
+    background-size: 50px 100%;
+  }
+
+.section-zigzag-top::before {
+    margin-top: -90px;
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #92CBF2));
+    background-image:
+        linear-gradient(315deg, #A4D1FF 25%, transparent 25%),
+        linear-gradient( 45deg, #92CBF2  25%, transparent 25%);
+    background-position: 50%;
+}
+
+.section-zigzag-bot::after {
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #92CBF2 ), color-stop(0.25, #2980b9));
+    background-image: 
+        linear-gradient(135deg, #A4D1FF 25%, transparent 25%),
+        linear-gradient(225deg, #92CBF2  25%, transparent 25%);
+    background-position: 50%;
+}
+

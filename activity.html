@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Activity Trip to East Nusa Tenggara</title>
+
+    <!-- JavaScript -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/set1.css">
+
+</head>
+<body id="page-top">
+    <div id="outer-wrap">
+        <div id="inner-wrap">
+            <nav id="navbar" role="navigation">
+                <div class="navwrapper">
+                    <div id="title">
+                        <div class="block">
+                            <h1 class="block-title">ENT</h1>
+                            <a class="nav-btn" id="nav-open-btn" href="#nav">Navigation</a>
+                        </div>
+                    </div>
+                    <div id="cart-trigger">
+                        <a class="cd-img-replace" href="#0">Cart</a>
+                    </div>
+                    <div id="nav">
+                        <div class="block">
+                            <h2 class="block-title">Menu</h2>
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="link-effect">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="link-effect">ABOUT ENT</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item">
+                                            <a href="history-ent.html">History</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="culture-ent.html">Culture</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="geo-ent.html">Geography</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="climate-ent.html">Climate</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-active">
+                                    <a href="activity.html" class="link-effect">WHAT TO DO</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item">
+                                            <a href="activity.html">Diving</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="activity.html">Hiking</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="activity.html">Cycling</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="activity.html">Kayaking</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="destination.html" class="link-effect">DESTINATION</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item">
+                                            <a href="komodo-islands.html">Komodo Islands</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="sumba-island.html">Sumba Island</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="flores-sea.html">Flores Sea</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="sawu-sea.html">Sawu Sea</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="flores-archipelago.html">Flores Archipelago</a>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="gallery.html" class="link-effect">GALLERY</a>
+                                </li>
+                                <li>
+                                    <a href="package.html" class="link-effect">PACKAGE</a>
+                                </li>
+                            </ul>
+                            <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="cd-cart">
+                <h2>Cart</h2>
+                <ul class="cd-cart-items">
+                    <li>
+                        No Items
+                        <div class="cd-price">Please add your trip plan!</div>
+                    </li>
+                </ul>
+                <!-- cd-cart-items -->
+
+                <div class="cd-cart-total">
+                    <p>Total <span>$0</span>
+                    </p>
+                </div>
+                <!-- cd-cart-total -->
+
+                <a href="#" onclick="openCheckout()" class="checkout-btn">Checkout</a>
+            </div>
+            <div id="hiddenModals" style="display: none;">
+                <div id="checkout-modal">
+                    <h3>Provide your email!</h3>
+                    <p>Please provide your email for us to inform you about your trip</p>
+                    <br>
+                    Enter your email: <input id="name" type="text">
+                </div>
+            </div>
+        <section class="section">
+            <div class="image-wrapper">
+                <div class="title">
+                    <h1>About East Nusa Tenggara</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">What To Do</a></li>
+                    </ul>        
+                </div>
+            </div>
+        </section>
+        <section class="tabs">
+                <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+                <label for="tab-1" class="tab-label-1">Diving</label>
+        
+                <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+                <label for="tab-2" class="tab-label-2">Hiking</label>
+        
+                <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+                <label for="tab-3" class="tab-label-3">Cycling</label>
+
+                <div class="clear-shadow"></div>
+                
+                <div class="content-activity">
+                    <div id="diving" class="content-1">
+                        <div class="package-grid">
+                             <h1 style="margin: 20px 0">Let's Diving and Find Secret Treasure</h1>
+                             <p>The abundance of life in Nusa Tenggara is due to the currents flowing through the straits between the islands.These waters are a frequent resting spot for sperm whales and their calves, orcas, dolphins and other mammals are spot here s well.<br/><br/>The diving is excellent for both wide angle and macro lovers, nice drop offs, huge fans and sponges and some of the best muck in the country.<br/><br/>The diving in the region is always unforgettable, but in this particular case we will go back home with some added memories in our hard disk: faces, expressions and a sense of envious that we will get after interacting with the remarkable friendly locals. <br/><br/>They all have something in common: not shy at all. They will regularly come up to the boat to sell their art and crafts; we will see it in the kids: they are born with a smile on their faces, enjoy their way of living... stress... no thanks!!</p><br/>
+                            <h2>MAUMERE HARBOR AND BAY</h2>
+                            <hr/>
+                            <p>This can be a very rewarding dive site, apart from the school of bat fish you will see under the pier, there are plenty of critters to be found. You'll see lots of nudies, different kind of pipe fish, the always spectacular picturesque dragonet, their cousins the mandarin fish and some mantis shrimp and devil scorpion fish among others. Once out of the bay there are a couple of nice reef dives and a muck dive where we've seen mimic octopus mating!!!!!</p><br/>
+                            <h2>ADONARA</h2>
+                            <hr/>
+                            <p>An obligated stop for the critters lovers: giant frog fish, mushroom coral pipe fish, sarron- and harlequin shrimp have been spotted here. The landscape is fantastic and although the dive sites are protected from the currents in the middle of the channel, there easily can be a current from up to 7 knots.</p><br/>
+                            <h2>LAMELERA</h2>
+                            <hr/>
+                            <p>One of the two only remaining traditional whale fishing villages in the world, a must for everybody!<br/><br/>A mixture of feelings, they catch anything from mantas to whale sharks, but their main goal is sperm whale, a good example of sustainable fishing, which keeps this area in good balance.<br/><br/>There is a possibility of doing a dive on the reef in front of the village with some interesting critters.</p><br/>
+                            <h2>SOANGI</h2>
+                            <hr/>
+                            <p>A place full of action being a small island at the end of a channel.<br/><br/>A very fishy dive, schooling fish and white tips are present, big napoleon wrasses and some pelagic will be welcoming us.</p>
+                        </div>    
+                    </div>    
+                    <div id="hiking" class="content-2">
+                        <div class="package-grid">
+                             <h1 style="margin: 20px 0">Let's Hiking and Get Beautiful Sunshine</h1>
+                             <p>Satisfy your craving for outdoor adventure with a trip into some of East Nusa Tenggara's rugged and untamed nature. From trekking in the jungleplay, play in the wild to climbing volcanic peaks.<br/>
+                             <br/>
+                             Come to East Nusa Tenggara to embrace the great outdoors and some of nature's most impressive wonders that you will surely never forget.</p><br/>
+                            <h2>Wae Rebo Trek</h2>
+                            <hr/>
+                            <p>
+                                <strong>Trip Location :</strong> Denge, East NUsa Tenggara<br/>
+                                <strong>Length :</strong> 4,1 miles<br/>
+                                <strong>Duration :</strong> 3 hours
+                            </p><br/>
+                            <h2>Warloka Trek</h2>
+                            <hr/>
+                            <p>
+                                <strong>Trip Location :</strong> Ujung, East Nusa Tenggara<br/>
+                                <strong>Length :</strong> 14,1 miles<br/>
+                                <strong>Duration :</strong> 7 hours
+                            </p><br/>
+                            <h2>West Flores Trek</h2>
+                            <hr/>
+                            <p>
+                                <strong>Trip Location :</strong> Nggorang, East Nusa Tenggara<br/>
+                                <strong>Length :</strong> 13,5 miles<br/>
+                                <strong>Duration :</strong> 7 hours
+                            </p>
+                        </div>
+                    </div>
+                    <div id="cycling" class="content-3">
+                        <div class="package-grid">
+                            <h1 style="margin: 20px 0">Cycling Around Traditional Village</h1>
+                            <p>The most interesing things to do in East Nusa Tenggara is Cycling your bicyle and feel the comfort zone from traditional village arround Flores Island, Sumba Island, and West Timor Island.</p><br/>
+                            <h2>West Flores Cycling</h2>
+                            <hr/>
+                            <p>
+                                <strong>Duration :</strong> 2 days<br/>
+                                Day 1: LABUANBAJO – WERANG (-/L/D)<br/>
+                                Departure from your hotel, drive to Langgo. Down hill Cycling from Langgo to Werang for 1.5 hours, continue by car to the crater lake Sano Nggoang, on the way back to Werang by bike for 40 minutes cycling. overnight at St. Claus Guest house in Werang.<br/><br/>
+                                Driving time : Labuanbajo – Langgo (Starting point for cycling) 1.5 hours<br/><br/>
+                                Werang – Sano Nggoang : 40 minutes<br/><br/>
+                                Cycling time: Langgo – Werang : 1.5 hours<br/>
+                                <br/>
+                                Day 2: WERANG – LABUANBAJO (B/L/-)<br/>
+                                Departure from guest house in Werang, and trekking to Cunca Rami waterfall, enjoying time at the waterfall, then continue walking to Rangat village, by car to the main road and by bike to Labuanbajo, down hill cycling for about 1.5 hours till in Hotel.<br/>
+                                Trekking from Werang to Cunca Rami waterfall and continue to Rangat village : 2 hours<br/>
+                                Cycling time : Roe – Labuanbajo 1.5 – 2 hours
+                            </p><br/>
+                            <h2>Labuan Bajo Cycling</h2>
+                            <hr/>
+                            <p>
+                                <strong>Duration :</strong> 5 hours;Cycling time 4 hours, approximately 30 km<br/>
+                                Departure at 7 am from your hotel lobby, passed Flores main road to Nggorang, and continue through secondary road to Handel,Tana Ndereng and Benteng, continue to Lemes – Nanga Nae and Gorontalo, then back to your hotel.<br/>
+                                On the way, enjoying Waemese bridge with nice scenery, villages and contact with local people.<br/><br/>
+                                Road biking          : Hotel –Ngorang (10 km)<br/>
+                                Mix off and Road : Nggorang – Benteng<br/>
+                                Offroad                   : Benteng – Lemes –Nanganae<br/>
+                                Onroad                   : Nanganae – Gorontalo – Hotel<br/>
+                            </p>
+                        </div>
+                    </div>            
+                </div>
+        </section>
+    </div>
+    <footer role="contentinfo">
+        <div class="block text">
+            <p class="small">Copyright © LinkenSky Team</p>
+            <a href="#page-top" id="totop"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/stash.js"></script>
+    <script type="text/javascript" src="js/nanomodal.min.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+
+</body>
+</html>

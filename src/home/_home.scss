@@ -1,0 +1,245 @@
+
+/* Home 2 */
+.konten-dua{
+    background-color: #a4d1ff;
+    padding: 50px;
+    color: #6b8aa9;
+
+    .desk-title{
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .desk-subtitle{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .img-desk-separator{
+        width: 70%;
+        margin:0 auto;
+        margin-top: 20px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .desk-icon-wrapper{
+        text-align: center; 
+        margin-top: 100px;       
+        li{
+            margin:0;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            position: relative;
+            
+            .icon-desc{
+                width: 100%;
+                display: block;
+                margin: 10px auto;
+                position: absolute;
+                
+            }
+        }
+    }
+
+    .read-more-bt{
+        text-align: center;
+        
+        div{
+            display: inline-block;
+        }
+
+        .desc-read-more{
+            // width: 100px;
+            // height: 50px;
+            background-color:#1e4e69;
+            color: white; 
+            border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            top: -7px;
+            padding: 10px; 
+            position: relative;
+            
+            &:hover{
+                background-color: #477893;
+            }
+        }
+    }
+}
+
+/* Paket */
+.paket{
+    display: block;
+    padding: 100px;
+    text-align: center;
+    background: url(../images/5.jpg) no-repeat center;
+    background-size: cover;
+    
+    >h1{
+        color: white;
+        display: inline-block;
+    }
+    
+    >ul>li{
+        display: inline-block;
+        margin: 20px;
+    }
+}
+
+.paket-box, .non-paket-box{
+    display: inline-block;
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 25px 0;
+    text-align: center;
+    
+    >h1{
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+    
+    >h2{
+        padding: 10px 80px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 3em;
+    }
+
+    
+
+    >ul>li{
+        margin: 5px;    
+    }
+
+    >input{
+        padding: 10px;
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        color: white;
+        border: none;
+        box-shadow: 2px 2px 3px #888888;
+        transition: all .5s ease 0s;
+        
+        &:hover{
+            padding: 10px 15px;
+            box-shadow: 3px 3px 3px #888888;
+        }
+
+        &:active{
+            box-shadow: 1px 1px 3px #888888;
+        }
+    }
+
+   
+}
+
+.paket-basic{
+
+    >h2{
+        background-color: #004a80;   
+    }
+     >input{
+        background-color: #004a80;
+        &:hover{
+            background-color: #2976CE;
+        }
+        &:active{
+            background-color: #001833;
+        }
+    }
+}
+
+.paket-pro{
+    padding: 25px 0;
+    color: #4bcaff;
+     
+    >h2{
+        padding: 15px 100px;
+        background-color: #4bcaff;   
+    }
+     >input{
+        background-color: #4bcaff;
+        
+        &:hover
+        {
+            background-color: #7BD6FC;
+        }
+
+        &:active{
+            background-color: #3F8CAD;
+        }
+    }
+
+    >ul>li{
+        padding: 5px 0;
+    }
+}
+
+.paket-adv{
+    >h2{
+        background-color: #077a81;   
+    }
+     >input{
+        background-color: #077a81;
+        
+        &:hover{
+            background-color: #5FB2B7;
+        }
+        &:active{
+            background-color: #164F53;
+        }
+    }
+}
+
+.paket-more{
+    display: inline-block;
+    background-color: #2a4e6c;
+    color: white;
+    padding: 15px 100px; 
+    transition: all .5s ease 0s;
+    
+    &:hover{
+        background-color: #4F718D;
+        padding: 15px 120px;
+    }  
+}
+
+.article{
+    width: auto;
+    height: auto;
+    padding: 50px 150px;
+    .image {
+        width: auto;
+        background: #e1e1e1;
+        margin-top: 50px;
+        padding: 30px 30px 10px 30px;
+        img {
+            width: 100%;
+        }   
+        .desc {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+.more{
+    font-size: 12px;
+    a {
+        color: #506A85;
+        border-bottom: none;
+        &:hover {
+            color: #489BBE;
+        }
+    }
+}
